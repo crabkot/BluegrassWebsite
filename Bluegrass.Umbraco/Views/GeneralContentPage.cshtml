@@ -1,0 +1,15 @@
+﻿@using Bluegrass.Application.ViewModels.Pages
+@model GeneralContentPageViewModel
+@{
+	Layout = "Layout";
+}
+
+@foreach (var block in Model.PageHeader)
+{
+    @await Component.InvokeAsync("Blocks", new { block })
+}
+
+@foreach (var block in Model.MainContent)
+{
+    @await Component.InvokeAsync("Blocks", new { block })
+}

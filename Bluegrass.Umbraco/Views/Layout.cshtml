@@ -1,0 +1,35 @@
+﻿@using Bluegrass.Application.Services
+@using Bluegrass.Application.ViewModels.Settings
+@using Umbraco.Cms.Web.Common.PublishedModels;
+@inject ISiteService _siteService;
+@{
+    Layout = null;
+    SiteSettingsViewModel siteSettings = _siteService.GetSiteSettings();
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>@siteSettings.SiteName</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <img src="@siteSettings.HeaderLogo?.Url()" width="15" height="15" alt="Logo" class="logo">
+        <nav class="nav">
+            @foreach (var item in @siteSettings.HeaderMenu)
+            {
+                <a href="@item.Url" target="@item.Target">@item.Name</a>
+            }
+        </nav>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer class="footer">
+        <p>@siteSettings.FooterText</p>
+    </footer>
+
+</body>
+</html>

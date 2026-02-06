@@ -1,0 +1,20 @@
+﻿@using Bluegrass.Application.ViewModels.Blocks
+@model HeroCtaBlockViewModel
+@{
+    var image = Model.Image;
+}
+
+<div class="hero-block">
+    <h2>Hero Block</h2>
+    <p>Title: @Model.Title</p>
+    <p>Description: @Model.Description</p>
+    @if (image != null)
+    {
+        <img src="@image.Url()" alt="@image.Name" />
+    }
+    @if (@Model.PrimaryCta!=null)
+    {
+        <button>@Model.PrimaryCta.Name</button>
+    }
+    
+</div>
