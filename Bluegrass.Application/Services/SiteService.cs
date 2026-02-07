@@ -10,24 +10,24 @@ namespace Bluegrass.Application.Services
 {
     public class SiteService(UmbracoHelper umbracoHelper) : ISiteService
     {
-        public IPublishedContent? Root()
+        public Site Root()
         {
-            return umbracoHelper.ContentAtRoot().FirstOrDefault();
+            return umbracoHelper.ContentAtRoot().OfType<Site>().First();
         }
 
-        public SiteSettingsViewModel GetSiteSettings()
+        public SiteSettingsViewModel? GetSiteSettings()
         {
-            var root = Root();
+            Site root = Root();
 
             if (root == null)
                 return null;
 
             return new SiteSettingsViewModel
             {
-                SiteName = root.Value<string>("siteName"),
-                HeaderLogo = root.Value<MediaWithCrops>("headerLogo"),
-                HeaderMenu = root.Value<IEnumerable<Link>>("headerMenu").ToList(),
-                FooterText = root.Value<string>("footerText")
+                SiteName = root.SiteName?? string.Empty,
+                HeaderLogo = root.HeaderLogo,
+                HeaderMenu = root.HeaderMenu,
+                FooterText = root.FooterText ?? string.Empty
             };
         }
 

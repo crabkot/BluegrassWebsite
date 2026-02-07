@@ -10,7 +10,7 @@ namespace Bluegrass.Application.ViewModels.Settings
         public string SiteName { get; set; }
 
         public MediaWithCrops HeaderLogo { get; set; }
-        public List<Link> HeaderMenu { get; set; }
+        public IEnumerable<Link> HeaderMenu { get; set; }
 
         public string FooterText { get; set; }  
 

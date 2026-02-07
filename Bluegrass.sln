@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bluegrass.Application", "Bl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bluegrass.Umbraco", "Bluegrass.Umbraco\Bluegrass.Umbraco.csproj", "{2F8348CE-2C1E-168B-DA72-1F067D341E65}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BluegrassWebsite.Models", "BluegrassWebsite.Models\BluegrassWebsite.Models.csproj", "{3093576B-AE03-4F0A-ADB8-612CE4F15555}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2F8348CE-2C1E-168B-DA72-1F067D341E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F8348CE-2C1E-168B-DA72-1F067D341E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F8348CE-2C1E-168B-DA72-1F067D341E65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3093576B-AE03-4F0A-ADB8-612CE4F15555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3093576B-AE03-4F0A-ADB8-612CE4F15555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3093576B-AE03-4F0A-ADB8-612CE4F15555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3093576B-AE03-4F0A-ADB8-612CE4F15555}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

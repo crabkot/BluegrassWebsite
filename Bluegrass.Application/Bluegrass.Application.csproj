@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Bluegrass.Core\Bluegrass.Core.csproj" />
     <ProjectReference Include="..\Bluegrass.Models\Bluegrass.Models.csproj" />
+    <ProjectReference Include="..\BluegrassWebsite.Models\BluegrassWebsite.Models.csproj" />
   </ItemGroup>
 
 </Project>

@@ -10,6 +10,7 @@ using Umbraco.Cms.Core.Models.Blocks;
 using Umbraco.Cms.Core.Web;
 using Umbraco.Cms.Web.Common;
 using Umbraco.Cms.Web.Common.Controllers;
+using Umbraco.Cms.Web.Common.PublishedModels;
 using Umbraco.Extensions;
 
 namespace Bluegrass.Umbraco.Controllers
@@ -31,8 +32,8 @@ namespace Bluegrass.Umbraco.Controllers
         {
             var model = new GeneralContentPageViewModel
             {
-                PageHeader = CurrentPage.Value<BlockGridModel>("pageHeader"),
-                MainContent = CurrentPage.Value<BlockGridModel>("mainContent")
+                PageHeader = ((GeneralContentPage)CurrentPage).PageHeader,
+                MainContent = ((GeneralContentPage)CurrentPage).MainContent
             };
 
             return View("GeneralContentPage",model);

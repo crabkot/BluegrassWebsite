@@ -11,7 +11,7 @@ namespace Bluegrass.Application.Services
 {
     public interface ISiteService
     {
-        public IPublishedContent? Root();
-        public SiteSettingsViewModel GetSiteSettings();
+        public Site Root();
+        public SiteSettingsViewModel? GetSiteSettings();
     }
 }

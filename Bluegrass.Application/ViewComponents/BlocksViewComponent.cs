@@ -7,6 +7,7 @@ using Umbraco.Cms.Core.Models;
 using Umbraco.Cms.Core.Models.Blocks;
 using Umbraco.Cms.Core.Models.PublishedContent;
 using Umbraco.Cms.Core.Strings;
+using Umbraco.Cms.Web.Common.PublishedModels;
 using Umbraco.Extensions;
 
 namespace Bluegrass.Umbraco.ViewComponents
@@ -24,34 +25,34 @@ namespace Bluegrass.Umbraco.ViewComponents
 
             return alias switch
             {
-                "heroBlock" => await HeroBlock(alias, block),
-                "heroCtaBlock" => await HeroCtaBlock(alias, block),
-                "rteBlock" => await RteBlock(alias, block),
+                "heroBlock" => await HeroBlock(alias, (HeroBlock)block.Content),
+                "heroCtaBlock" => await HeroCtaBlock(alias, (HeroCtaBlock)block.Content),
+                "rteBlock" => await RteBlock(alias, (RteBlock)block.Content),
                 _ => Content($"<!-- Unknown block type: {alias} -->")
             };
         }
 
-        private async Task<IViewComponentResult> HeroBlock(string name, BlockGridItem block)
+        private async Task<IViewComponentResult> HeroBlock(string name, HeroBlock block)
         {
             var model = new HeroBlockViewModel
             {
-                Title = block.Content.Value<string?>("title") ?? string.Empty,
-                Description = block.Content.Value<string?>("description") ?? string.Empty,
-                Image = block.Content.Value<MediaWithCrops?>("image")!
+                Title = block.Title ?? string.Empty,
+                Description = block.Description ?? string.Empty,
+                Image = block.Image!
             };
 
             return await Task.FromResult(View(name, model));
 
         }
 
-        private async Task<IViewComponentResult> HeroCtaBlock(string name, BlockGridItem block)
+        private async Task<IViewComponentResult> HeroCtaBlock(string name, HeroCtaBlock block)
         {
             var model = new HeroCtaBlockViewModel
             {
-                Title = block.Content.Value<string>("title") ?? string.Empty,
-                Description = block.Content.Value<string>("description") ?? string.Empty,
-                Image = block.Content.Value<MediaWithCrops>("image")!,
-                PrimaryCta = block.Content.Value<Link>("primaryCallToAction")!
+                Title = block.Title ?? string.Empty,
+                Description = block.Description ?? string.Empty,
+                Image = block.Image!,
+                PrimaryCta = block.PrimaryCallToAction!
 
             };
 
@@ -59,11 +60,11 @@ namespace Bluegrass.Umbraco.ViewComponents
 
         }
 
-        private async Task<IViewComponentResult> RteBlock(string name, BlockGridItem block)
+        private async Task<IViewComponentResult> RteBlock(string name, RteBlock block)
         {
             var model = new RteBlockViewModel
             {
-                Content = block.Content.Value<IHtmlEncodedString>("content")!,
+                Content = block.Content!,
 
             };
 
