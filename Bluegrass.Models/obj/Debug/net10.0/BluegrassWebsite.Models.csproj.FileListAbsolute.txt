@@ -1,0 +1,13 @@
+C:\Users\Anton\source\repos\Bluegrass\BluegrassWebsite.Models\bin\Debug\net10.0\BluegrassWebsite.Models.deps.json
+C:\Users\Anton\source\repos\Bluegrass\BluegrassWebsite.Models\bin\Debug\net10.0\BluegrassWebsite.Models.dll
+C:\Users\Anton\source\repos\Bluegrass\BluegrassWebsite.Models\bin\Debug\net10.0\BluegrassWebsite.Models.pdb
+C:\Users\Anton\source\repos\Bluegrass\BluegrassWebsite.Models\obj\Debug\net10.0\BluegrassWebsite.Models.csproj.AssemblyReference.cache
+C:\Users\Anton\source\repos\Bluegrass\BluegrassWebsite.Models\obj\Debug\net10.0\BluegrassWebsite.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Anton\source\repos\Bluegrass\BluegrassWebsite.Models\obj\Debug\net10.0\BluegrassWebsite.Models.AssemblyInfoInputs.cache
+C:\Users\Anton\source\repos\Bluegrass\BluegrassWebsite.Models\obj\Debug\net10.0\BluegrassWebsite.Models.AssemblyInfo.cs
+C:\Users\Anton\source\repos\Bluegrass\BluegrassWebsite.Models\obj\Debug\net10.0\BluegrassWebsite.Models.csproj.CoreCompileInputs.cache
+C:\Users\Anton\source\repos\Bluegrass\BluegrassWebsite.Models\obj\Debug\net10.0\BluegrassWebsite.Models.sourcelink.json
+C:\Users\Anton\source\repos\Bluegrass\BluegrassWebsite.Models\obj\Debug\net10.0\BluegrassWebsite.Models.dll
+C:\Users\Anton\source\repos\Bluegrass\BluegrassWebsite.Models\obj\Debug\net10.0\refint\BluegrassWebsite.Models.dll
+C:\Users\Anton\source\repos\Bluegrass\BluegrassWebsite.Models\obj\Debug\net10.0\BluegrassWebsite.Models.pdb
+C:\Users\Anton\source\repos\Bluegrass\BluegrassWebsite.Models\obj\Debug\net10.0\ref\BluegrassWebsite.Models.dll
