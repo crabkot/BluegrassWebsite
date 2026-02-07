@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1nTRlyhJmpE=",
+  "dgSpecHash": "PcjqSeDDe0s=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Anton\\source\\repos\\Bluegrass\\BluegrassWebsite.Models\\BluegrassWebsite.Models.csproj",
+  "projectFilePath": "C:\\Users\\Anton\\source\\repos\\Bluegrass\\BluegrassWebsite.Models\\Bluegrass.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Anton\\.nuget\\packages\\bouncycastle.cryptography\\2.6.1\\bouncycastle.cryptography.2.6.1.nupkg.sha512",
     "C:\\Users\\Anton\\.nuget\\packages\\examine.core\\3.7.1\\examine.core.3.7.1.nupkg.sha512",

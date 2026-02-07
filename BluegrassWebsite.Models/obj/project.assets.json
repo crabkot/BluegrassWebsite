@@ -3918,9 +3918,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Anton\\source\\repos\\Bluegrass\\BluegrassWebsite.Models\\BluegrassWebsite.Models.csproj",
-      "projectName": "BluegrassWebsite.Models",
-      "projectPath": "C:\\Users\\Anton\\source\\repos\\Bluegrass\\BluegrassWebsite.Models\\BluegrassWebsite.Models.csproj",
+      "projectUniqueName": "C:\\Users\\Anton\\source\\repos\\Bluegrass\\BluegrassWebsite.Models\\Bluegrass.Models.csproj",
+      "projectName": "Bluegrass.Models",
+      "projectPath": "C:\\Users\\Anton\\source\\repos\\Bluegrass\\BluegrassWebsite.Models\\Bluegrass.Models.csproj",
       "packagesPath": "C:\\Users\\Anton\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Anton\\source\\repos\\Bluegrass\\BluegrassWebsite.Models\\obj\\",
       "projectStyle": "PackageReference",

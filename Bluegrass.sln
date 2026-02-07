@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bluegrass.Application", "Bl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bluegrass.Umbraco", "Bluegrass.Umbraco\Bluegrass.Umbraco.csproj", "{2F8348CE-2C1E-168B-DA72-1F067D341E65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BluegrassWebsite.Models", "BluegrassWebsite.Models\BluegrassWebsite.Models.csproj", "{3093576B-AE03-4F0A-ADB8-612CE4F15555}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bluegrass.Models", "BluegrassWebsite.Models\Bluegrass.Models.csproj", "{3093576B-AE03-4F0A-ADB8-612CE4F15555}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
